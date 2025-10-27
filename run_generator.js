@@ -10,7 +10,7 @@ const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
 // [!!! 중요 !!!] 이 URI의 <...> 부분을 당신의 GCP '내부 IP'로 수정하십시오!
-const MONGO_URI = 'mongodb://<mongo-p_내부_IP>:27017,<mongo-s1_내부_IP>:27017,<mongo-s2_내부_IP>:27017/?replicaSet=rs0';
+const MONGO_URI = 'mongodb://10.142.0.2:27017,10.142.0.3:27017,10.142.0.4:27017/?replicaSet=rs0';
 
 const DB_NAME = 'testdb';
 const COLLECTION_NAME = 'testcoll'; // [!!!] 컬렉션 이름은 'testcoll' 입니다.
