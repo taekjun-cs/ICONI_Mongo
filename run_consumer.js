@@ -86,7 +86,7 @@ async function watchCollection() {
       printFinalResults();
       await client.close();
       console.log('[CONSUMER] Disconnected from MongoDB.');
-    }, 30000); // 30초
+    }, 180000); // 3분
   }
 
   // 배치 처리 로직 (시뮬레이션)
